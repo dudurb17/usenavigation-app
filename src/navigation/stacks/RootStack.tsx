@@ -10,18 +10,10 @@ export default function RootStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="HomeTabs"
+        name="MainTabs"
         component={MainTabs}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
-        name="About"
-        component={About}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Contact" component={Contact} />
     </Stack.Navigator>
   );
