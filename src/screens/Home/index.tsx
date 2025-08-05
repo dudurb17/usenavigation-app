@@ -6,6 +6,7 @@ import { RootStackParamList } from "../../navigation/types/RoutesParams";
 export function Home() {
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
@@ -13,7 +14,7 @@ export function Home() {
       <Button
         title="About"
         onPress={() => {
-          navigation.navigate("About");
+          navigation.navigate("About", { name: "Eduardo" });
         }}
       />
     </View>

@@ -15,9 +15,17 @@ export default function MyStack() {
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           {isLoggedIn ? (
-            <Stack.Screen name="Root" component={RootStack} />
+            <Stack.Screen
+              name="Root"
+              component={RootStack}
+              options={{ headerShown: false }}
+            />
           ) : (
-            <Stack.Screen name="Auth" component={AuthStack} />
+            <Stack.Screen
+              name="Auth"
+              component={AuthStack}
+              options={{ headerShown: false }}
+            />
           )}
         </Stack.Navigator>
       </NavigationContainer>

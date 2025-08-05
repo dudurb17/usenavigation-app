@@ -1,6 +1,7 @@
 export type RootStackParamList = {
   Home: undefined;
-  About: undefined;
+  About: { name: string };
+  Contact: undefined;
 };
 
 export type AuthStackParamList = {
