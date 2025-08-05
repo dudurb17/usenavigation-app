@@ -10,8 +10,8 @@ export default function RootStack() {
   const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen name="MainTabs" component={MainTabs} /> */}
-      <Stack.Screen name="Drawer" component={Drawer} />
+      <Stack.Screen name="MainTabs" component={MainTabs} />
+      {/* <Stack.Screen name="Drawer" component={Drawer} /> */}
       <Stack.Screen name="Contact" component={Contact} />
     </Stack.Navigator>
   );
